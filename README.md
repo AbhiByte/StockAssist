@@ -1,2 +1,2 @@
 # StockAssist
-A 3-in-1 stock analyzer tool: Sentiment Analysis, Price Predictor, and Intrinsic Value
+A 2-in-1 stock analyzer tool: Sentiment Analysis and Price Predictor; All wrapped neatly into a Discord bot.
