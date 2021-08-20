@@ -19,7 +19,7 @@ def predict_prices(dates, prices, x):
     #3 different models to predict prices
     svr_lin = SVR(kernel = 'linear', C = 1e3)
     svr_poly = SVR(kernel = 'poly', C = 1e3, degree = 2)
-    svr_rbf = SVR(kernel = 'rbf', C = 1e3, gamma = 0.1)
+    svr_rbf = SVR(kernel = 'rbf', C = 1e3, gamma = 0.1) #Radial Basis Function
 
     #Fit the data
     svr_lin.fit(dates, prices)
