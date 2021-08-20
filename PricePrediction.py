@@ -3,21 +3,14 @@ import csv
 import numpy as np
 from sklearn.svm import SVR
 import matplotlib.pyplot as plt
+from pandas_datareader import data
 
-#Initialize 2 lists
-dates = []
-prices = []
+#Get any stock's data
+def get_stock_data(ticker, start, end):
+    stock_data = data.DataReader(ticker, start=start, end=end, data_source='yahoo')['Close']
+    return stock_data
 
-#Get data from csv file
-def get_data(filename):
-    with open(filename, 'r') as csvfile:
-        csvFileReader = csv.reader(csvfile)
-        next(csvFileReader)
-        for row in csvFileReader:
-            dates.append(int(row[0].split('/')[1]))
-            flt_price = row[3].replace('$', '')
-            prices.append(float(flt_price))
-    return
+
 
 #Predict prices
 def predict_prices(dates, prices, x):
@@ -47,9 +40,18 @@ def predict_prices(dates, prices, x):
     #Return the predicted values
     return svr_rbf.predict(x)[0], svr_lin.predict(x)[0], svr_poly.predict(x)[0]
 
-#Get data from file
-get_data('AAPLHistoricalDataEXAMPLE.csv')
+#Getting all data and extracting dates and values
+dates_raw = get_stock_data('AAPL', '2021-08-01', '2021-08-18').index.tolist()
+dates = []
+for x in range(len(dates_raw)):
+    dates.append(str(dates_raw[x].date()))
+days = []
+for x in dates:
+    days.append(int(x.split('-')[2]))
+
+prices = get_stock_data('AAPL', '2021-08-01', '2021-08-18').tolist()
+
 
 #Predict price and print to console
-predicted_price = predict_prices(dates, prices, [[14]])
+predicted_price = predict_prices(days, prices, [[19]])
 print(predicted_price)
