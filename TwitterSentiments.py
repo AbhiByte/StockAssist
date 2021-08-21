@@ -3,12 +3,12 @@ import tweepy
 from textblob import TextBlob
 
 #Consumer keys
-consumer_key = 'SECRET'
-consumer_secret = 'SECRET'
+consumer_key = '9Nmb522FbZ8Q5GEDkucdFTuTz'
+consumer_secret = 'RFuTgmanJGKzhhm5WsLAuOQqHVEO0M4WfKJZEeMUXJ8KDZDF7D'
 
 #Access tokens
-access_token = 'SECRET'
-access_token_secret = 'SECRET'
+access_token = '2281365362-aGw4Zakc0abIZqfSZl1j3D78xYyPRofiOCRRPPh'
+access_token_secret = 'csVekppWm9neGGMEkCRZUDmfVQJc4vyoZ6ABzzDLSPUVX'
 
 #Authentication
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
@@ -35,6 +35,9 @@ def average_sentiment(sentiment_average_list):
 
 
 #Main code
-ticker_symbol = str(input("Enter a stock's ticker symbol: "))
-avg = average_sentiment(find_tweets(ticker_symbol.upper()))
-print(avg)
+def runner_code():
+    ticker_symbol = str(input("Enter a stock's ticker symbol: "))
+    avg = average_sentiment(find_tweets(ticker_symbol.upper()))
+    print(f'The average sentiment for your stock (-1 to +1, -1 being very negative and +1 being very positive) on Twitter right now is {avg}')
+    
+runner_code()
