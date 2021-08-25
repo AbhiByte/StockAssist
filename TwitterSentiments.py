@@ -1,6 +1,10 @@
 #Import modules
 import tweepy
 from textblob import TextBlob
+import asyncio
+import discord
+from discord.ext import commands
+
 
 #Consumer keys
 consumer_key = '9Nmb522FbZ8Q5GEDkucdFTuTz'
@@ -31,13 +35,18 @@ def find_tweets(ticker_symbol):
 #Calculates average sentiment
 def average_sentiment(sentiment_average_list):
     #Returns average value
-    return (sum(sentiment_average_list) / len(sentiment_average_list))
-
-
+    average = (sum(sentiment_average_list) / len(sentiment_average_list))
+    return average
+async def f_t_test(ctx):
+    find_tweets()
+    await ctx.send(sentiment_average_list)
+async def a_s_test(ctx):
+    average_sentiment()
+    await ctx.send(average)
 #Main code
 def runner_code():
     ticker_symbol = str(input("Enter a stock's ticker symbol: "))
     avg = average_sentiment(find_tweets(ticker_symbol.upper()))
-    print(f'The average sentiment for your stock (-1 to +1, -1 being very negative and +1 being very positive) on Twitter right now is {avg}')
-    
+    print(f'The average sentiment for your stock (-1 to +1, -1 being very negative and +1 being very positive) on Twitter right now is {round(avg, 3)}')
+
 runner_code()
