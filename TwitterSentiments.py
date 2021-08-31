@@ -7,12 +7,12 @@ from discord.ext import commands
 
 
 #Consumer keys
-consumer_key = '9Nmb522FbZ8Q5GEDkucdFTuTz'
-consumer_secret = 'RFuTgmanJGKzhhm5WsLAuOQqHVEO0M4WfKJZEeMUXJ8KDZDF7D'
+consumer_key = 'SECRET'
+consumer_secret = 'SECRET'
 
 #Access tokens
-access_token = '2281365362-aGw4Zakc0abIZqfSZl1j3D78xYyPRofiOCRRPPh'
-access_token_secret = 'csVekppWm9neGGMEkCRZUDmfVQJc4vyoZ6ABzzDLSPUVX'
+access_token = 'SECRET'
+access_token_secret = 'SECRET'
 
 #Authentication
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
