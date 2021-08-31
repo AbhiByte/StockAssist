@@ -9,9 +9,7 @@
     Application for predicting future stock prices and getting Twitter's opinion on your stock. 
     <br />
     <br />
-    <a href="https://github.com/Momin-C/The-Number-Guide/issues">Report Bug</a>
-  </p>
-</p>
+ p>
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
