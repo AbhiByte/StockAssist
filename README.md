@@ -9,7 +9,6 @@
     Application for predicting future stock prices and getting Twitter's opinion on your stock. 
     <br />
     <br />
- p>
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
