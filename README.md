@@ -1,7 +1,7 @@
 <br />
   <p align="center">
   <a href="https://github.com/AbhiByte/StockAssist">
-    <img src="Images/Icon.png" alt="Logo" width="120" height="120">
+    <img src="Images/logo.jpg" alt="Logo" width="120" height="120">
   </a>
 
   <h2 align="center">StockAssist</h2>
