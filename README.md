@@ -24,7 +24,7 @@
 
 StockAssist allows you to: 
 1. Predict a stock price at a future date using the powefull scikit-learn module.
-2. Get real-time Twitter sentiment analysis on your stock using the tweepy and texbblob modules.
+2. Get real-time Twitter sentiment analysis on your stock using the tweepy and textblob modules.
 
 ### Developed Using
 This project was developed using Jupyter Notebook and many modules, documentation can be found below
