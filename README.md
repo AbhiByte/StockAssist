@@ -37,7 +37,7 @@ This project was developed using Jupyter Notebook and many modules, documentatio
 
 
 ## Contributing
-If you have any ideas on how to improve The Number Guide, make a contribution!
+Have a burning idea you feel could improve StockAssist?
 
 1. Fork the project
 2. Create a new branch (`git checkout -b update`)
