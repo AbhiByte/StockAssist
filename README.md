@@ -16,7 +16,6 @@
 
 * [About the Project](#about-the-project)
     * [Developed Using](#developed-using)
-* [Screenshots](#screenshots)
 * [Contributing](#contributing)
 * [References](#references)
 * [Contact](#contact)
