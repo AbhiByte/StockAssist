@@ -27,7 +27,7 @@ StockAssist allows you to:
 2. Get real-time Twitter sentiment analysis on your stock using the tweepy and textblob modules.
 
 ### Developed Using
-This project was developed using Jupyter Notebook and many modules, documentation can be found below
+This project was developed using multiple modules, documentation can be found below:
 * [scikit-learn](https://scikit-learn.org/stable/)
 * [Matplotlib](https://matplotlib.org)
 * [pandas](https://pandas.pydata.org)
