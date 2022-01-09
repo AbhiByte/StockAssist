@@ -16,6 +16,7 @@
 
 * [About the Project](#about-the-project)
     * [Developed Using](#developed-using)
+    * [Running the Project](#running-the-project)
 * [Contributing](#contributing)
 * [References](#references)
 * [Contact](#contact)
@@ -34,6 +35,9 @@ This project was developed using multiple modules, documentation can be found be
 * [NumPy](https://numpy.org)
 * [Tweepy](https://www.tweepy.org/)
 * [TextBlob](https://textblob.readthedocs.io/en/dev/)
+  
+### Running the Project
+Simply download the code and run this project in your text editor or IDE of choice. That's it! Nothing fancy :)
 
 
 ## Contributing
