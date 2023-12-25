@@ -49,4 +49,5 @@ def runner_code():
     avg = average_sentiment(find_tweets(ticker_symbol.upper()))
     print(f'The average sentiment for your stock (-1 to +1, -1 being very negative and +1 being very positive) on Twitter right now is {round(avg, 3)}')
 
-runner_code()
+if __name__ == "__main__":
+    runner_code()
